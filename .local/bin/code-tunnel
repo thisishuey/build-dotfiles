@@ -11,3 +11,5 @@ if [ ! -f ~/.local/bin/code ]; then
     )
 fi
 
+~/.local/bin/code tunnel "$@"
+
