@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ ! -f ~/.local/bin/code ]; then
+    (
+        echo "Downloading code-cli"
+        cd ~/.local/bin
+        curl --output vscode.tar.gz -L -X GET "https://code.visualstudio.com/sha/download?build=stable&os=cli-alpine-x64"
+        tar -zxf vscode.tar.gz
+        rm vscode.tar.gz
+        chmod +x ~/.local/bin/code
+    )
+fi
+
