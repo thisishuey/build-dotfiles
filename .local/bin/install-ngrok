@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ ! -f ~/.local/bin/ngrok ]; then
+    (
+        echo "Downloading ngrok"
+        cd ~/.local/bin
+        curl --output ngrok.tgz -L -X GET "https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz"
+        tar -zxf ngrok.tgz
+        rm ngrok.tgz
+        chmod +x ~/.local/bin/ngrok
+    )
+fi
+
