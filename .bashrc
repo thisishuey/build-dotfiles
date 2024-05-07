@@ -42,4 +42,4 @@ __bash_prompt() {
 }
 __bash_prompt
 export PROMPT_DIRTRIM=4
-export PATH=~/.local/bin:$PATH
+export PATH=~/.local/bin:~/.local/share/gem/ruby/3.2.0/bin:$PATH
